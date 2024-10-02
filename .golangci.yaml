@@ -6,23 +6,40 @@ linters:
     - goimports
   # prettier-ignore
   disable:
-    - tagliatelle      # we're parsing data from external sources (g-rath)
-    - varnamelen       # maybe later (g-rath)
-    - exhaustruct      # overkill (g-rath)
-    - forcetypeassert  # too hard (g-rath)
-    - lll              # line length is hard (g-rath)
-    - godox            # to-do comments are fine (g-rath)
-    - godot            # comments are fine without full stops (g-rath)
-    - gomnd            # not every number is magic (g-rath)
-    - mnd              # not every number is magic (g-rath)
-    - wsl              # disagree with, for now (g-rath)
-    - ireturn          # disagree with, sort of (g-rath)
-    - gochecknoglobals # disagree with, for non changing variables (another-rex)
-    - wrapcheck        # too difficult, will re-add later (another-rex)
-    - testpackage      # will re-add later (another-rex)
-    - err113           # will re-add later (another-rex)
-    - nonamedreturns   # disagree with, for now (another-rex)
-    - goconst          # not everything should be a constant
+    - tagliatelle     
+    # we're parsing data from external sources (g-rath)
+    - varnamelen      
+    # maybe later (g-rath)
+    - exhaustruct     
+    # overkill (g-rath)
+    - forcetypeassert 
+    # too hard (g-rath)
+    - lll             
+    # line length is hard (g-rath)
+    - godox        
+    # to-do comments are fine (g-rath)
+    - godot          
+    # comments are fine without full stops (g-rath)
+    - gomnd      
+    # not every number is magic (g-rath)
+    - mnd             
+    # not every number is magic (g-rath)
+    - wsl             
+    # disagree with, for now (g-rath)
+    - ireturn     
+     # disagree with, sort of (g-rath)
+    - gochecknoglobals
+    # disagree with, for non changing variables (another-rex)
+    - wrapcheck      
+    # too difficult, will re-add later (another-rex)
+    - testpackage    
+    # will re-add later (another-rex)
+    - err113          
+    # will re-add later (another-rex)
+    - nonamedreturns 
+    # disagree with, for now (another-rex)
+    - goconst         
+    # not everything should be a constant
   presets:
     - bugs
     - comment
@@ -36,7 +53,7 @@ linters:
 linters-settings:
   govet:
     settings:
-      printf:
+     printf:
         funcs:
           - (github.com/google/osv-scanner/pkg/reporter.Reporter).Errorf
           - (github.com/google/osv-scanner/pkg/reporter.Reporter).Warnf
@@ -111,7 +128,6 @@ linters-settings:
     # so no return split required.
     # Default: 1
     block-size: 2
-
 issues:
   exclude-rules:
     - path: pkg/reporter
