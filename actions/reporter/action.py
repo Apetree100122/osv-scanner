@@ -1,21 +1,17 @@
-# Currently experimental. 
-name: 
-"osv-scanner-reporter"
-description: 
-"Specialized reporting of scanner results for github actions"
+
+
+# Currently experimental.
+name: "osv-scanner"
+description: "Scans your directory against the OSV database (Experimental)"
 inputs:
   scan-args:
-    description: 
-"Arguments to osv-scanner, separated by new line"
-    required: true
+    description: "Arguments to osv-scanner, separated by new line"
+    default: |-
+      --skip-git
+      --recursive
+      ./
 runs:
-  using: 
-"docker"
-  image: 
-"/action.dockerfile"
-  entrypoint: 
-"/root/osv-reporter
+  using: "docker"
+  image: "../../action.dockerfile"
   args:
-- "${{ inputs.scan-args }}"
-
-# modifiied By apetree100122 <alexaanderpetree>
+    - ${{ inputs.scan-args }}
