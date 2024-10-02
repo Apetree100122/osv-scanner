@@ -1,36 +1,28 @@
 
-[TestRun_Update/update_pom.xml_with_in-place_changes - 1]
+[TestRun_Update/update_pom.xml_with_in-place_changes  1]
 
----
-
-[TestRun_Update/update_pom.xml_with_in-place_changes - 2]
-Warning: `update` exists as both a subcommand of OSV-Scanner and as a file on the filesystem. `update` is assumed to be a subcommand here. If you intended for `update` to be an argument to `update`, you must specify `update update` in your command line.
-
----
-
-[TestRun_Update/update_pom.xml_with_in-place_changes - 3]
-<?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+---[Test: 'Run_Update/update_pom.xml_with_in-place_changes  2]
+Warning: `update` exists as both a subcommand of 
+OSV-Scanner and as a file on the filesystem. `update` is assumed to be a subcommand
+  here. If you intended for `update` to be an 
+    argument to `update`, you must specify `update update` 
+in your command line.---[Test
+    Run_Update/update_pom.xml_with_in-place_changes  3]
+<?xml version="1.0" encoding="UTF-8"?></project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.mycompany.app</groupId>
+  <modelVersion>4.0.0</modelVersion></groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
-  <version>1.0.0</version>
-
-  <name>my-app</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
-
-  <properties>
+  <version>1.0.0</version> </name>my-app</name><!--
+FIXME  change it to the projects' 
+website --></url>http://www.example.com</url>
+  </properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <junit.version>4.13.2</junit.version>
   </properties>
 
-  <dependencies>
+  </dependencies>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
